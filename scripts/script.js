@@ -90,3 +90,75 @@
 // if (nombre > 0) {
 //   console.log(resultat);
 // }
+
+// Exercice 9
+
+// A l'aide de ce tableau :
+// Afficher dans la console Tracer
+// Afficher dans la console Mei
+// Changer le nom McCree en "Cole Cassidy"
+// Faite une recherche sur comment ajouter un élément dans un tableau et ajouter "Ramattra"
+// Ajouter une chaine de caractère "nop", pour simuler l'ajout d'une erreur
+// Faire une recherche pour savoir comment supprimer un élément dans un tableau et supprimer "nop"
+
+let championOverwatch = [
+  "Ashe",
+  "Echo",
+  "Tracer",
+  "Reaper",
+  "Phara",
+  "McCree",
+  "Soldier:76",
+  "Genji",
+  "Sombra",
+  "Doomfist",
+  "Widowmaker",
+  "Torbjorn",
+  "Hanzo",
+  "Bastion",
+  "Junkrat",
+  "Mei",
+  "Symmetra",
+];
+
+// console.log(championOverwatch[2]);
+// console.log(championOverwatch[15]);
+
+// console.log((championOverwatch[5] = "Cole Cassidy"));
+
+// championOverwatch.push("Ramattra", "nop");
+// console.log(championOverwatch);
+
+// championOverwatch.pop();
+// console.log(championOverwatch);
+
+// Exercice 10
+
+// Convertir le tableau en chaine de caractère
+// Afficher une copie du tableau qui va de Genji à Hanzo (faite une recherche sur slice)
+// Ajouter "champion : 0" au début du tableau (faite une recherche sur unshift)
+// Mettre le champion "Bastion" tout en majuscule (faite une recherche sur toUpperCase)
+// Compter le nombre de personnage dans le tableau (lenght)
+
+// console.log(championOverwatch.toString());
+// console.log(championOverwatch.slice(7, 13));
+// championOverwatch.unshift("Champion : 0");
+// console.log(championOverwatch);
+// championOverwatch[14] = championOverwatch[14].toUpperCase();
+// console.log(championOverwatch);
+// console.log(championOverwatch.length);
+
+// Exercice 11
+// A l'aide de la boucle foreach, concaténer tous les héros dans une variable pour faire apparaitre dans la console "Les héros d'Overwatch sont : [Tableau des Heros d'Overwatch]
+
+let phrase = "Les héros d'Overwatch sont : ";
+
+championOverwatch.forEach((e) => {
+  phrase += e + ", ";
+});
+
+console.log(phrase);
+
+phrase = phrase.slice(0, -2);
+phrase += "]";
+console.log(phrase);
