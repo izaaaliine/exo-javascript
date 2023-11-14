@@ -1,37 +1,32 @@
-// // Exercice 1
-// // Créer 4 variables : nom, prenom, age, taille
-// // affichez dans la console ces 4 variables (vous pouvez séparer les variables par une virgule dans le console.log())
-// // Ajoutez 2 à l'age
-// // affichez de nouveau les 4 variables dans la console
+// // // Exercice 1
+// // // Créer 4 variables : nom, prenom, age, taille
+// // // affichez dans la console ces 4 variables (vous pouvez séparer les variables par une virgule dans le console.log())
+// // // Ajoutez 2 à l'age
+// // // affichez de nouveau les 4 variables dans la console
 
-// let name = 0;
-// let prenom = 0;
-// let age = 0;
-// let taille = 0;
+// let name = "dhalluin";
+// let prenom = "izaline";
+// let age = 26;
+// let taille = 173;
 
-// console.log(`nom, prenom, taille, age`);
+// console.log(name, prenom, taille, age);
 
-// age = 2;
+// age = age + 2;
 
-// console.log(`nom, prenom, taille, age:`, age);
+// console.log(name, prenom, taille, age);
 
-// // Exercice 2 :
+// // // Exercice 2 :
 
-// // Reprenez le premier exercice et à l'aide de la concaténation, affectez le tout à une nouvelle variable.
-// // Affichez cette nouvelle variable dans la console.
-
-// name = `dhalluin`;
-// prenom = `izaline`;
-// age = 26;
-// taille = 173;
+// // // Reprenez le premier exercice et à l'aide de la concaténation, affectez le tout à une nouvelle variable.
+// // // Affichez cette nouvelle variable dans la console.
 
 // let total = `${name} ${prenom} ${age} ${taille} `;
 
 // console.log(total);
 
-// // Exercice 3 :
+// // // Exercice 3 :
 
-// // Reprenez le résultat de l'exercice 2, et à la place d'affecter le prenom à la variable prénom, utilisez la fonction prompt pour assigner ce qu'un utilisateur écrit à la variable prenom
+// // // Reprenez le résultat de l'exercice 2, et à la place d'affecter le prenom à la variable prénom, utilisez la fonction prompt pour assigner ce qu'un utilisateur écrit à la variable prenom
 
 // prenom = prompt(`Quel est votre prenom ?`);
 // console.log(prenom);
@@ -42,12 +37,11 @@
 
 // age = prompt(`Quel âge avez-vous ?`);
 
-//   if (age >= 18) {
-//     console.log(`Je suis majeur`);
-//   }
-//   else {
-//     console.log(`Je ne suis pas majeur`);
-//   }
+// if (age >= 18) {
+//   console.log(`Je suis majeur`);
+// } else {
+//   console.log(`Je ne suis pas majeur`);
+// }
 
 // Exercice 5 :
 
@@ -65,5 +59,34 @@
 
 // A l'aide de math.floor et math.random, affichez dans la console un nombre aléatoire compris entre 1 et 100. (cet exercice vous demandera d'aller lire la doc)
 
-let joker = Math.floor(Math.random() * 100) + 1;
-console.log(joker);
+// let joker = Math.floor(Math.random() * 100) + 1;
+// console.log(joker);
+
+// Exercice 7 :
+
+// A faire uniquement en JS
+// Créer un élement h1 avec comme contenu Hello World, une classe name "monH1".
+// Créer un paragraphe avec comme contenu une petite présentation de vous, un id "presentation"
+// Il faut que le paragraphe apparaisse avant le H1
+
+// let titre = document.createElement(`h1`);
+// titre.className = `monH1`;
+// titre.textContent = "Hello World";
+// document.body.appendChild(titre);
+
+// let texte = document.createElement(`p`);
+// texte.id = `presentation`;
+// texte.textContent = "Je suis un paragraphe";
+// document.body.insertBefore(texte, titre);
+// // ou h1.parentNode.insertBefore(texte, titre);
+
+// Exercice 8 :
+
+// L'utilisateur doit entrer un nombre. Si ce nombre est positif, alors on doit récupérer une valeur aléatoire compris entre 1 et ce nombre
+// l'afficher dans la console
+
+// let nombre = prompt("Entrer un nombre");
+// let resultat = Math.floor(Math.random() * nombre) + 1;
+// if (nombre > 0) {
+//   console.log(resultat);
+// }
